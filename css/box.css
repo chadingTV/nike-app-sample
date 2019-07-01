@@ -69,6 +69,20 @@ html,body{background:#e5e5e7;}
     background-size: 100%;
     background-position: 2px 34px;
 }
+.chading::before{
+    background:url('https://chading.net/logo.png') no-repeat;
+    background-size: 100%;
+    width: 110px;
+    height: 110px;
+    border-radius: 12px;
+    left: 48px;
+    top: 18px;
+    transform: rotateX(8deg) rotateY(-7deg) rotateZ(10deg);
+    box-shadow: 5px 6px 15px 0 rgba(0,0,0,0.3);
+}
+.chading::after{
+    display:none;
+}
 
 
 
