@@ -6,7 +6,7 @@ Nike app concept sample implement
 <br/>
 
 ### sample original URL
-[https://dribbble.com/shots/6673049--10-Shoe-Boxes-Swipe-Transition](https://dribbble.com/shots/6673049--10-Shoe-Boxes-Swipe-Transition){:target="_blank"}
+<a href="https://dribbble.com/shots/6673049--10-Shoe-Boxes-Swipe-Transition" target="_blank">https://dribbble.com/shots/6673049--10-Shoe-Boxes-Swipe-Transition</a>
 
 by **Sang Nguyen** in **dribbble.com**
 
@@ -27,4 +27,4 @@ by **Sang Nguyen** in **dribbble.com**
 <br/>
 
 ### transform 3D cube reference
-[https://3dtransforms.desandro.com/cube](https://3dtransforms.desandro.com/cube){:target="_blank"}
+<a href="https://3dtransforms.desandro.com/cube" target="_blank>https://3dtransforms.desandro.com/cube</a>
