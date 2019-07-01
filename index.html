@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="kr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Nike App Concept Sample coding</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+<meta name="keywords" content="nick app concept html/css/javascript">
+<meta name="author" content="chading.net">
+<meta property="og:title" content="Nike App Concept Sample coding" />
+<meta property="og:description" content="nike app concept implement html/css/javascript" />
+<meta property="og:image" content="./img/screenshot.png" />
+<meta property="og:url" content="chading.net" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/box.css">
+<link rel="stylesheet" href="./css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.min.js" integrity="sha256-NtPQd/Jy7Ze2E72YS8WJDGMu6xFYomLYibE0hpyLTjs=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="background">
+    <span>SWIPE</span>
+    <span>TRANSITION</span>
+    <span>SANG NGUYEN</span>
+    <a href="https://chading.net" target="_blank"><img src="https://chading.net/logo.png"/></a>
+</div>
+<div class="wrap">
+    <div class="header">
+        <i class="fas fa-chevron-left"></i>
+        <img src="./img/nike.png"/>
+    </div>
+    <div class="bottom">
+        <div class="content">
+            <button>
+                <i class="fas fa-shopping-bag"></i>
+            </button>
+            <ul class="description">
+                <li>
+                    <h4>MEN'S SHOE</h4>
+                    <p>Nike React Presto<br/>
+                        Rabid Panda
+                    </p>
+                    <p class="price">$100</p>
+                </li>
+                <li class="on">
+                    <h4>MEN'S SHOE</h4>
+                    <p>Roshe Run Vibrant
+                        <br/>
+                        Red White
+                    </p>
+                    <p class="price">$110</p>
+                </li>
+                <li>
+                    <h4>MEN'S SHOE</h4>
+                    <p>
+                        Air Force One
+                        <br/>
+                        Nike Air Max
+                    </p>
+                    <p class="price">$140</p>
+                </li>
+                <li>
+                    <h4>MEN'S SHOE</h4>
+                    <p>Nike React Presto<br/>
+                        Rabid Panda
+                    </p>
+                    <p class="price">$190</p>
+                </li>
+                <li>
+                    <h4>CREATE BY Chading.net</h4>
+                    <p>
+                        <a href="https://github.com/chadingTV/nike-app-sample" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <br/>
+                        Source code
+                        <i class="fas fa-external-link-alt"></i>
+                        </a> 
+                    </p>
+                    <p class="price">Free</p>
+                </li>
+            </ul>
+            <div class="buttons">
+                <ul class="star">
+                    <li>4.5</li>
+                    <li class="on">4.1</li>
+                    <li>2.5</li>
+                    <li>3.5</li>
+                    <li>9.9</li>
+                </ul>
+                <span class="favo">
+                    <i class="far fa-heart"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="container">
+            <div class="scene left">
+              <div class="cube box">
+                <div class="shoes shoes2"></div>
+                <div class="cube__face cube__face--back"></div>
+                <div class="cube__face cube__face--right"></div>
+                <div class="cube__face cube__face--left"></div>
+                <div class="cube__face cube__face--top"></div>
+                <div class="cube__face cube__face--bottom"></div>
+              </div>
+              <div class="cube cover open">
+                <div class="cube__face cube__face--front"></div>
+                <div class="cube__face cube__face--right"></div>
+                <div class="cube__face cube__face--left"></div>
+                <div class="cube__face cube__face--bottom"></div>
+              </div>
+            </div>
+            <div class="scene">
+              <div class="cube box">
+                <div class="shoes"></div>
+                <div class="cube__face cube__face--back"></div>
+                <div class="cube__face cube__face--right"></div>
+                <div class="cube__face cube__face--left"></div>
+                <div class="cube__face cube__face--top"></div>
+                <div class="cube__face cube__face--bottom"></div>
+              </div>
+              <div class="cube cover open">
+                <div class="cube__face cube__face--front"></div>
+                <div class="cube__face cube__face--right"></div>
+                <div class="cube__face cube__face--left"></div>
+                <div class="cube__face cube__face--bottom"></div>
+              </div>
+            </div>
+            <div class="scene right">
+              <div class="cube box">
+                <div class="shoes shoes3"></div>
+                <div class="cube__face cube__face--back"></div>
+                <div class="cube__face cube__face--right"></div>
+                <div class="cube__face cube__face--left"></div>
+                <div class="cube__face cube__face--top"></div>
+                <div class="cube__face cube__face--bottom"></div>
+              </div>
+              <div class="cube cover open">
+                <div class="cube__face cube__face--front"></div>
+                <div class="cube__face cube__face--right"></div>
+                <div class="cube__face cube__face--left"></div>
+                <div class="cube__face cube__face--bottom"></div>
+              </div>
+            </div>
+            <div class="scene right hide">
+              <div class="cube box">
+                <div class="shoes shoes4"></div>
+                <div class="cube__face cube__face--back"></div>
+                <div class="cube__face cube__face--right"></div>
+                <div class="cube__face cube__face--left"></div>
+                <div class="cube__face cube__face--top"></div>
+                <div class="cube__face cube__face--bottom"></div>
+              </div>
+              <div class="cube cover open">
+                <div class="cube__face cube__face--front"></div>
+                <div class="cube__face cube__face--right"></div>
+                <div class="cube__face cube__face--left"></div>
+                <div class="cube__face cube__face--bottom"></div>
+              </div>
+            </div>
+            <div class="scene right hide">
+              <div class="cube box">
+                <div class="shoes chading"></div>
+                <div class="cube__face cube__face--back"></div>
+                <div class="cube__face cube__face--right"></div>
+                <div class="cube__face cube__face--left"></div>
+                <div class="cube__face cube__face--top"></div>
+                <div class="cube__face cube__face--bottom"></div>
+              </div>
+              <div class="cube cover open">
+                <div class="cube__face cube__face--front"></div>
+                <div class="cube__face cube__face--right"></div>
+                <div class="cube__face cube__face--left"></div>
+                <div class="cube__face cube__face--bottom"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="link-area">
+    <span class="left">
+        <a href="https://dribbble.com/shots/6673049--10-Shoe-Boxes-Swipe-Transition" target="_blank">
+            <i class="fab fa-dribbble"></i>
+            Original Sample
+        </a>
+    </span>
+    <span class="right">
+        <a href="https://github.com/chadingTV/nike-app-sample" target="_blank">
+            <i class="fab fa-github"></i>
+            Source code
+        </a>
+    </span>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/2.0.0/jquery.mobile-events.min.js"></script>
+<script type="text/javascript">
+var now = 1;
+$(function(){
+    $(".container").on("click",".scene",function(){
+        $(this).children(".cube.cover").toggleClass("open");
+    });
+    // swipe move
+    $(".wrap").on("swipeleft",function(){
+       moveBox(1);
+    });
+    $(".wrap").on("swiperight",function(){
+       moveBox(0);
+    });
+});
+function moveBox(plus){
+    if(plus){
+        if(now<4){
+            now++;
+        }else{
+            now = 4;
+        }
+    }else{
+        if(now>0){
+            now--;
+        }else{
+            now = 0;
+        }
+    }
+    $(".container .cube.cover").addClass("open");
+    $(".container>.scene").each(function(){
+        const idx = $(this).index();
+        if(idx>(now+1)||idx<(now-1)){
+            $(this).addClass("hide");
+        }else{
+            $(this).removeClass("hide");
+        }
+        if(idx==now){
+            $(this).removeClass("left").removeClass("right");
+        }else if(idx<now){
+            $(this).addClass("left");
+        }else if(idx>now){
+            $(this).addClass("right");
+        }
+    });
+    $(".buttons .star li,.description li").removeClass("on");
+    $(".buttons .star li:eq("+now+"),.description li:eq("+now+")").addClass("on");
+}
+</script>
+</body>
+</html>

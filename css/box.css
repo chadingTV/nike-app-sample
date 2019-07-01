@@ -1,0 +1,187 @@
+/* create by chading.net 20190710 */
+
+*{
+    box-sizing:border-box;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+html,body{background:#e5e5e7;}
+.container{
+    margin: 0 auto;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: scale(0.9);
+}
+.scene {
+    width: 200px;
+    height: 150px;
+    perspective: 600px;
+    position: absolute;
+    transform: translateX(-50%);
+    transition:transform 400ms linear;
+}
+.scene.left{
+    transform: translateX(-60%);
+}
+.scene.left.hide{
+    transform: translateX(-200%);
+}
+.scene.right{
+    transform: translateX(-40%);
+}
+.scene.right.hide{
+    transform: translateX(100%);
+}
+.shoes{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-10px) translateY(4px);
+}
+.shoes::before,
+.shoes::after{
+    content:'';
+    display:block;
+    background:url('../img/shoes.png') no-repeat;
+    background-size:100%;
+    width: 100%;
+    height:100%;
+    position:absolute;
+}
+.shoes::after{
+    transform:rotate(180deg);
+}
+.shoes2::before,
+.shoes2::after{
+    background:url('../img/shoes2.png') no-repeat;
+    background-size: 86%;
+    background-position: 17px 37px;
+}
+.shoes3::before,
+.shoes3::after{
+    background:url('../img/shoes3.png') no-repeat;
+    background-size: 87%;
+    background-position: 8px 9px;
+}
+.shoes4::before,
+.shoes4::after{
+    background:url('../img/shoes4.png') no-repeat;
+    background-size: 100%;
+    background-position: 2px 34px;
+}
+
+
+
+.cube{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform-origin: top;
+    transform: rotateX(12deg);
+    transition: transform 400ms cubic-bezier(0.81, 0, 0.26, 0.99);
+}
+.cube.cover{
+    margin-top:-1px;
+    z-index: 2;
+    transform: rotateX(12deg) translateZ(1px);
+}
+.cube.box{
+    margin-top:-1px;
+    z-index: 0;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.1);
+    transform: rotateX(12deg) translateZ(-1px);
+}
+.cube.open{
+    transform: rotateX(127deg) translateZ(1px);
+}
+
+.cube__face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    transform-style: preserve-3d;
+}
+.cover .cube__face {
+    background: #fa6e1d;
+}
+.scene.left,.scene.right{
+    pointer-events: none;
+}
+.scene.left .cube{
+    transform: translate(-240px,-5px) rotateX(15deg);
+}
+.scene.right .cube{
+    transform: translate(240px,-5px) rotateX(15deg);
+}
+
+
+.cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
+.cube__face--right  {transform: rotateY( 90deg) translateZ(100px);}
+.cube__face--back   {transform: rotateY(180deg) translateZ(100px);}
+.cube__face--left   { transform: rotateY(-90deg) translateZ(100px); }
+.cube__face--top    { transform: rotateX( 90deg) translateZ(100px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(100px); }
+
+.box .cube__face--front  {}
+    .box .cube__face--right  {width: 100px;height: 148px;transform: rotateY( 90deg) translateZ(148px) translateX(50px);}
+    .box .cube__face--back   {width: 196px;height: 148px;transform: rotateY(180deg) translateZ(100px) translateX(-2px);}
+    .box .cube__face--left   {width: 100px;height: 148px;transform: rotateY(-90deg) translateZ(48px) translateX(-50px);}
+    .box .cube__face--top    {width: 196px;height: 100px;transform: rotateX( 90deg) translateZ(50px) translateY(-50px) translateX(2px);}
+.box .cube__face--bottom {width: 196px;height: 100px;transform: rotateX(-90deg) translateZ(98px) translateY(52px) translateX(2px);/* background: #d85f23 !important; */}
+
+.cover .cube__face--front  {width: 200px;height: 152px;transform: rotateY( 0deg) translateZ(0px) translateY(-2px);background: #f97726 url('../img/nike-w.png') no-repeat;background-size: 70%;background-position: center;}
+.cover .cube__face--right  {width: 30px;height: 150px;transform: rotateY( 90deg) translateZ(185px) translateX(15px);}
+.cover .cube__face--back   {}
+.cover .cube__face--left   {width: 30px;height: 150px;transform: rotateY( 90deg) translateZ(-15px) translateX(15px);}
+.cover .cube__face--top    {}
+.cover .cube__face--bottom {width: 200px;height: 30px;transform: rotateX(-90deg) translateZ(135px) translateY(15px);}
+
+.cube__face::before{
+    transform: translateZ(-1px);
+}
+.cover .cube__face--left::before{
+    transform: translateZ(1px);
+}
+.cover .cube__face::before{
+    content:'';
+    width:100%;
+    height: 100%;
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    background: #f3d8be;
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.15) inset;
+}
+.box .cube__face {
+    background: #ec681a;
+}
+.box .cube__face::before{
+    content:'';
+    width:100%;
+    height: 100%;
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    background: #f3d8be;
+    box-shadow: 0 0 15px 0px rgba(0,0,0,0.2) inset;
+}
+.box .cube__face.cube__face--back::before{
+    background:#d4b391;
+}
+.box .cube__face.cube__face--top::before{
+    background: linear-gradient( #bda183 30%, #f3d8be);
+}
+.box .cube__face.cube__face--left::before{
+    background: linear-gradient(to right, #bda183 50%, #f3d8be);
+}
+.box .cube__face.cube__face--right::before{
+    background: linear-gradient(to left, #bda183 50%, #f3d8be);
+}
