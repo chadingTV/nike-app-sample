@@ -1,14 +1,14 @@
 # Nike App Sample
 Nike app concept sample implement
 
-html,css,javascript
+**html,css,javascript**
 
 <br/>
 
 ### sample original URL
 https://dribbble.com/shots/6673049--10-Shoe-Boxes-Swipe-Transition
 
-by Sang Nguyen in dribbble.com
+by **Sang Nguyen** in **dribbble.com**
 
 <br/>
 
@@ -19,7 +19,7 @@ by Sang Nguyen in dribbble.com
 <br/>
 
 ### used library
-- googlefont : roboto
+- googlefont : roboto 400,500
 - fontawesome 5.6.3
 - jquery 1.12.4
 - jquery-touch-events 2.0.0
