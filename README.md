@@ -27,4 +27,4 @@ by **Sang Nguyen** in **dribbble.com**
 <br/>
 
 ### transform 3D cube reference
-<a href="https://3dtransforms.desandro.com/cube" target="_blank>https://3dtransforms.desandro.com/cube</a>
+[https://3dtransforms.desandro.com/cube](https://3dtransforms.desandro.com/cube" target="_blank)
