@@ -13,8 +13,12 @@ by **Sang Nguyen** in **dribbble.com**
 <br/>
 
 ### html preview URL
+https://chadingtv.github.io/nike-app-sample/
+or
+https://chading.net/nike-app-sample
 
 
+![screen shot](https://chadingtv.github.io/nike-app-sample/img/screenshot.png)
 
 <br/>
 
